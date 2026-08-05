@@ -7,20 +7,17 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <img src="assets/images/Capturar.PNG" alt="Logo da empresa">
+    <img src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
     <img src="assets/images/Capturar_2.PNG" alt="Menu">
+    <img src="assets/images/logo.png" alt="Logo da empresa">
+    <h1>Crie sua conta</h1>
     <form method="post">
-        <h1>Crie sua conta</h1>
-
         <label for="nome">Nome</label>
         <input type="text" id="nome" placeholder="Digite seu nome..." required>
-
         <label for="email">E-mail</label>
         <input type="email" id="email" placeholder="Digite seu e-mail..." required>
-
         <label for="senha">Senha</label>
         <input type="password" id="senha" placeholder="Digite sua senha..." required minlength="8">
-
         <label for="acesso">Selecione um nível de acesso</label>
         <select name="nivelAcesso" id="acesso" required>
             <option value="" selected hidden>Selecione um nível de acesso</option>
@@ -28,16 +25,24 @@
             <option value="moderador">Moderador</option>
             <option value="membro">Membro</option>
         </select>
-
         <details>
             <summary>Termos de uso</summary>
             <p>Eu autorizo</p>
-            <label for="termos">Eu li tudo</label>
+            <label for="termos">Eu aceito os termos de uso</label>
             <input type="checkbox" id="termos" required>
         </details>
-
-        <button><a href="dashboard.html">Cadastrar</a></button>
-        <a href="index.html"><h4>Já tenho conta</h4></a>
+        <a href="dashboard.html">Cadastrar</a>
+        <a href="index.html"><h2>Já tenho conta</h2></a>
     </form>
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1101.7157827136773!2d-43.35147827426762!3d-21.752556091090245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c976673a705%3A0xb0aa4dd64090a7f5!2sSENAI%20Juiz%20de%20Fora%20CFP%20Jos%C3%A9%20Fagundes%20Netto!5e0!3m2!1spt-BR!2sbr!4v1785949201675!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+    </footer>
 </body>
 </html>
