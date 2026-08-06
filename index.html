@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu Login</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <img src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
-    <img src="assets/images/Capturar_2.PNG" alt="Menu">
-    <img src="assets/images/logo.png" alt="Logo da empresa">
-    <h1>Faça seu Login</h1>
-    <form method="get" action="dashboard.html">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Enter..." required>
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="Enter..." required>
-        <button type="submit">Login</button>
-    </form>
-    <a href="cadastro.html"><h2>Criar conta</h2></a>
-    <a href="esqueci_senha.html">Esqueci minha senha</a>
+    <div id="cabecalho">
+        <img id="lampada" src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
+        <img id="menu" src="assets/images/Capturar_2.PNG" alt="Menu">
+        <h1>Faça seu Login</h1>
+    </div>
+    <div id="formulario">
+        <form method="get" action="dashboard.html">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Enter..." required>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Enter..." required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="cadastro.html"><h2>Criar conta</h2></a>
+        <a href="esqueci_senha.html">Esqueci minha senha</a>
+    </div>
+    <img id="logo" src="assets/images/logo.png" alt="Logo da empresa">
 </body>
 </html>
