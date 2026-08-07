@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faça seu Login</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="cabecalho">
+    <header id="cabecalho">
         <img id="lampada" src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
-        <img id="menu" src="assets/images/Capturar_2.PNG" alt="Menu">
         <h1>Faça seu Login</h1>
-    </div>
-    <div id="formulario">
-        <form method="get" action="dashboard.html">
+        <img id="menu" src="assets/images/Capturar_2.PNG" alt="Menu">
+    </header>
+    <div id="form">
+        <form method="get" action="dashboard.html" id="formulario">
             <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Enter..." required>
+            <input type="email" id="email" placeholder="Digite seu E-mail..." required>
             <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Enter..." required>
+            <input type="password" id="senha" placeholder="Digite sua senha..." required minlength="8">
             <button type="submit">Login</button>
         </form>
-        <a href="cadastro.html"><h2>Criar conta</h2></a>
-        <a href="esqueci_senha.html">Esqueci minha senha</a>
+        <a href="cadastro.html"><h3>Criar conta</h3></a>
+        <a href="esqueci_senha.html"><h3>Esqueci minha senha</h3></a>
     </div>
     <img id="logo" src="assets/images/logo.png" alt="Logo da empresa">
 </body>
