@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esqueci minha senha</title>
+    <link rel="stylesheet" href="assets/css/esqueci_senha.css">
 </head>
 <body>
-    <img src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
-    <img src="assets/images/Capturar_2.PNG" alt="Menu">
-    <img src="assets/images/logo.png" alt="Logo da empresa">
-    <h1>Redefinir senha</h1>
-    <form method="get" action="index.html">
-        <label for="senha">Senha</label>
-        <input type="password" id="senha"  placeholder="Enter..."  required minlength="8">
-        <label for="confirmar_senha">Confirmar senha</label>
-        <input type="password" id="confirmar_senha" placeholder="Enter..." required minlength="8">
-        <button type="submit">Redefinir senha</button>
-    </form>
+    <header id="cabecalho">
+        <img id="lampada" src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
+        <h1>Redefinir senha</h1>
+        <img id="menu" src="assets/images/Capturar_2.PNG" alt="Menu">
+    </header>
+    <div id="form">
+        <form method="get" action="index.html" id="formulario">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha"  placeholder="Digite sua senha..."  required minlength="8">
+            <label for="confirmar_senha">Confirmar senha</label>
+            <input type="password" id="confirmar_senha" placeholder="Digite sua senha novamente..." required minlength="8">
+            <button type="submit">Redefinir senha</button>
+        </form>
+    </div>
+    <img id="logo" src="assets/images/logo.png" alt="Logo da empresa">
 </body>
 </html>
