@@ -52,38 +52,8 @@ h1 {
 }
 
 main {
-    margin-top: 200px;
+    margin-top: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #card_quarto_principal a {
     display: block;
@@ -91,47 +61,108 @@ main {
     height: 100%;
 }
 
-
-
-
-
-h2 {
+[id^='titulo'] {
     width: 200px;
     height: 70px;
     background-color: #626260;
     display: flex;
     text-align: center;
-    font-size: 22px;
+    font-size: 16px;
+    color: white;
+    justify-content: space-around;
+    border-radius: 15px 15px 0 0;
+}
+
+#titulo_1 h2 {
+    margin-top: 8px;
+}
+
+#titulo_2 h2 {
+    margin-top: 23px;
+}
+
+#titulo_3 h2 {
+    margin-top: 23px;
+}
+
+#titulo_4 h2 {
+    margin-top: 10px;
 }
 
 [id^='card_'] {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    margin: 200px;
+    margin: 70px;
+    left: 100px;
     width: 200px;
     height: 300px;
     background-color: #03888D;
+    transition: transform 0.2s ease;
+    border-radius: 15px;
+}
+
+[id^='card_']:hover {
+    transform: scale(1.05);
 }
 
 #badge {
     position: absolute;
-    top: -30px;
-    right: -30px;
+    top: -22px;
+    right: -22px;
     background-color: red;
     color: white;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 11px;
     text-align: center;
 }
-
-
 
 a {
     text-decoration: none;
     color: black;
 }
 
+footer {
+    width: 150px;
+    height: 80px;
+    background-color: #119DA4;
+    display: flex;
+    text-align: center;
+}
+
+.ir_classroom {
+    margin: 30px auto;
+    width: 100%;
+    height: 100%;
+    border: black 5px;
+}
+
+footer .ir_classroom {
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    margin: 100px;
+    background-color: #119DA4;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+[id^='grafico'] {
+    position: relative;
+    width: 130px;
+    height: 197.13px;
+    left: 35px;
+    top: 13px;
+    border-radius: 7px;
+}
