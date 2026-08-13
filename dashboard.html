@@ -8,11 +8,32 @@
 </head>
 <body>
     <header id="cabecalho">
-        <img id="lampada" src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
-        <h1>Dashboard Geral</h1>
-        <img id="menu" src="assets/images/Capturar_2.PNG" alt="Menu">
+            <img id="lampada" src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
+            <h1>Dashboard Geral</h1>
+            <div class="icone">
+                <img id="menu" src="assets/images/Capturar_2.PNG" alt="Menu">
+                <ul class="menu-opcoes">
+                    <li><a href="index.html">Tela de Login</a></li>
+                    <li class="dropdawn">
+
+                        <details>
+                            <summary>Comodos</summary>
+                                <li><a href="quarto-principal.html">Quarto Principal</a></li>
+                                <li><a href="sala.html">Sala</a></li>
+                                <li><a href="cozinha.html">Cozinha</a></li>
+                                <li><a href="outros_comodos.html">Outro Comodos</a></li>
+                            
+                        </details>
+                    </li>
+                
+                    
+                </ul>
+
+
+            </div>
     </header>
     <main>
+        <a href="#tabela" id="ir_tabela">Ir para o Relatório de Acesso</a>
         <nav class="comodos">
             <ul>
                 <li>
@@ -187,6 +208,7 @@
     </main>
     <footer>
         <a href="https://classroom.google.com/h/st" target="_blank" class="ir_classroom">Ir para o classroom</a>
+        <img id="logo" src="assets/images/logo.png" alt="Logo da empresa">
     </footer>
 </body>
 </html>
