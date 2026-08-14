@@ -24,6 +24,8 @@ body {
     z-index: 1000;
 }
 
+
+
 h1 {
     display: flex;
     position: relative;
@@ -43,16 +45,15 @@ h1 {
     transform: scale(1.05);
 }
 
-#menu {
+
+
+.material-symbols-outlined.icone-menu {
     display: flex;
     position: relative;
-    border-radius: 10px;
-    width: 80px;
-    height: 80px;
-    left: 73%;
+    font-size: 90px;
+    left: 270px;
+    color: white;
 }
-
-
 
 main {
     margin-top: 60px;
@@ -393,7 +394,6 @@ ul {
 .icone {
     transition: all 0.3s ease-in-out;
     justify-content: flex-end;
-    
     display: flex;
     align-items: center;
     position: sticky;
@@ -402,7 +402,7 @@ ul {
 }
 
 
-.menu-opcoes{
+.menu-opcoes {
     opacity: 0;
     padding: 20px;
     width: 300px;
@@ -410,7 +410,7 @@ ul {
     background-color: #03888D;
     border-radius: 8px;
     display: flex;
-    flex-direction:  column;
+    gap: 10px;
     transition: all 0.3s ease-in;
     text-align: center;
     margin-top: 200px;
@@ -426,44 +426,52 @@ ul {
 .link {
     display: flex;
     position: relative;
-    margin: 7px;
+    margin-top: 12px;
     text-align: center;
     width: 170px;
     height: 37px;
     background-color: #1A3342;
-    left: 40px;
     border-radius: 12px;
-    padding-left: 10px;
     border: 2px black solid;
 }
 
 #link1 {
     display: flex;
     position: relative;
+    padding-left: 10px;
     padding-top: 5px;
 }
 
 #link2 {
     display: flex;
     position: relative;
-    padding-left: 64px;
+    height: 37px;
+    width: 85px;
+    padding-left: 20px;
     padding-top: 5px;
-    
 }
 
 #link3 {
     display: flex;
     position: relative;
-    padding-left: 48px;
-    padding-top: 5px;   
+    width: 110px;
+    padding-left: 14px;
+    padding-top: 5px;
 }
 
 #link4 {
     display: flex;
     position: relative;
-    padding-top: 6px;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .link a {
     color: white;
+}
+
+#links_comodos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
