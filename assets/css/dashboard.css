@@ -29,7 +29,7 @@ h1 {
     position: relative;
     color: white;
     font-size: 40px;
-    left: 105px;
+    left: 150px;
 }
 
 #lampada {
@@ -403,7 +403,6 @@ ul {
 
 
 .menu-opcoes{
-
     opacity: 0;
     padding: 20px;
     width: 300px;
@@ -431,11 +430,17 @@ ul {
     text-align: center;
     width: 170px;
     height: 37px;
-    background-color: #D9D9D9;
+    background-color: #1A3342;
     left: 40px;
     border-radius: 12px;
     padding-left: 10px;
     border: 2px black solid;
+}
+
+#link1 {
+    display: flex;
+    position: relative;
+    padding-top: 5px;
 }
 
 #link2 {
@@ -444,4 +449,21 @@ ul {
     padding-left: 64px;
     padding-top: 5px;
     
+}
+
+#link3 {
+    display: flex;
+    position: relative;
+    padding-left: 48px;
+    padding-top: 5px;   
+}
+
+#link4 {
+    display: flex;
+    position: relative;
+    padding-top: 6px;
+}
+
+.link a {
+    color: white;
 }
