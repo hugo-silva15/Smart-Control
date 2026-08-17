@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
 }
 
 body {
@@ -12,10 +13,9 @@ body {
 
 #cabecalho {
     background-color: #1A3342;
-    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
     display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: space-between;
     padding: 10px 30px;
     position: sticky;
@@ -28,17 +28,20 @@ body {
 
 h1 {
     display: flex;
-    position: relative;
     color: white;
     font-size: 40px;
-    left: 150px;
+    position: relative;
+    top: 30px;
+    left: 110px;
 }
 
 #lampada {
+    position: relative;
     border-radius: 50%;
     width: 90px;
     height: 90px;
-    transition: transform 0.2s ease; 
+    transition: transform 0.2s ease;
+    top: 10px;
 }
 
 #lampada:hover {
@@ -51,12 +54,13 @@ h1 {
     display: flex;
     position: relative;
     font-size: 90px;
-    left: 270px;
     color: white;
+    top: 10px;
 }
 
 main {
     margin-top: 60px;
+    display: grid;
 }
 
 #card_quarto_principal a {
@@ -95,16 +99,14 @@ main {
 
 [id^='card_'] {
     display: flex;
-    flex-direction: row;
     position: relative;
-    margin: 50px;
-    left: 90px;
     width: 250px;
     height: 370px;
     background-color: #03888D;
     transition: transform 0.2s ease;
     border-radius: 15px;
     border: 2.5px black solid;
+    margin: 50px;
 }
 
 [id^='card_']:hover {
@@ -141,16 +143,15 @@ footer {
     margin-top: 100px;
 }
 
-
-
-#logo {
+footer #logo {
     display: flex;
     position: relative;
     width: 120px;
     height: 120px;
     margin-top: 20px;
-    left: 75%;
+    flex-direction: row-reverse;
 }
+
 
 .ir_classroom {
     display: flex;
@@ -180,7 +181,6 @@ footer {
     border-radius: 10px;
     font-size: 22px;
     position: relative;
-    left: 77px;
 }
 
 caption {
@@ -197,38 +197,25 @@ caption {
 
 #tabela {
     background-color: #1A3342;
-    width: 550px;
-    height: 550px;
+    width: 500px;
+    height: 500px;
     display: flex;
     border-radius: 20px;
     align-items: center;
     position: relative;
     margin: 70px auto;
-    text-align: center;
+    justify-content: center;
 }
 
 
 
-#ir_tabela {
-    display: flex;
-    position: relative;
-    width: 270px;
-    height: 70px;
-    padding: 25px;
-    background-color: #119DA4;
-    border-radius: 35px;
-    margin:auto;
-    transition: transform 0.2s ease;
-    border: 2.3px black solid;
-}
 
-
-#ir_tabela:hover {
-    transform: scale(1.07);
-}
 
 .comodos {
-    margin-bottom: 110px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding: 80px;
 }
 
 
@@ -237,7 +224,6 @@ caption {
 
 ul {
     display: flex;
-    flex-direction: row;
     list-style: none;
 }
 
@@ -272,7 +258,6 @@ ul {
 }
 
 .grupo_usuario {
-    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -393,29 +378,25 @@ ul {
 
 .icone {
     transition: all 0.3s ease-in-out;
-    justify-content: flex-end;
     display: flex;
-    align-items: center;
-    position: sticky;
     font-size: 20px;
-    margin: 0px;
+    flex-direction: row-reverse;
 }
 
 
 .menu-opcoes {
     opacity: 0;
-    padding: 20px;
-    width: 300px;
     list-style: none;
     background-color: #03888D;
     border-radius: 8px;
     display: flex;
     gap: 10px;
+    padding: 10px;
     transition: all 0.3s ease-in;
     text-align: center;
-    margin-top: 200px;
     z-index: 1000;
     border: 2px black solid;
+    padding-top: 40px;
 }
 
 .icone:hover .menu-opcoes{
@@ -473,5 +454,4 @@ ul {
 #links_comodos {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
