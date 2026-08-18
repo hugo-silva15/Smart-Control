@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
 }
 
 body {
@@ -36,15 +37,12 @@ h1 {
     transform: scale(1.05);
 }
 
-#menu {
-    border-radius: 10px;
-    width: 90px;
-    height: 90px;
-    transition: transform 0.2s ease;
-}
-
-#menu:hover {
-    transform: scale(1.05);
+.material-symbols-outlined.icone-menu {
+    display: flex;
+    position: relative;
+    font-size: 90px;
+    color: white;
+    top: 10px;
 }
 
 
@@ -147,3 +145,53 @@ a:hover {
     text-align: left;
 }
 
+@media (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-wrap: wrap;
+    }
+    
+    body {
+        background-color: #33658A;
+        user-select: none;
+    }
+    
+    #cabecalho {
+        width: 1005;
+        background-color: #1A3342;
+        min-height: 110px;
+        max-height: 110px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    
+    h1 {
+        color: white;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    
+    #lampada {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        transition: transform 0.2s ease; 
+    }
+    
+    #lampada:hover {
+        transform: scale(1.05);
+    }
+    
+    .material-symbols-outlined.icone-menu {
+        display: flex;
+        position: relative;
+        font-size: 50px;
+        color: white;
+        top: 10px;
+    }
+}

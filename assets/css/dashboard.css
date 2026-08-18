@@ -24,15 +24,13 @@ body {
     z-index: 1000;
 }
 
-
-
 h1 {
     display: flex;
     color: white;
     font-size: 40px;
     position: relative;
+    left: 100px;
     top: 30px;
-    left: 110px;
 }
 
 #lampada {
@@ -47,8 +45,6 @@ h1 {
 #lampada:hover {
     transform: scale(1.05);
 }
-
-
 
 .material-symbols-outlined.icone-menu {
     display: flex;
@@ -152,7 +148,6 @@ footer #logo {
     flex-direction: row-reverse;
 }
 
-
 .ir_classroom {
     display: flex;
     position: relative;
@@ -170,7 +165,6 @@ footer #logo {
 .ir_classroom:hover {
     transform: scale(1.07);
 }
-
 
 .relatorio {
     width: 200px;
@@ -207,10 +201,6 @@ caption {
     justify-content: center;
 }
 
-
-
-
-
 .comodos {
     display: flex;
     position: relative;
@@ -218,16 +208,10 @@ caption {
     padding: 80px;
 }
 
-
-
-
-
 ul {
     display: flex;
     list-style: none;
 }
-
-
 
 [id^='fundo_grafico'] {
     width: 170px;
@@ -250,7 +234,6 @@ ul {
     margin-top: 20px;
 }
 
-
 .usuario {
     font-size: 11px;
     margin: 5px 0 0;
@@ -263,7 +246,6 @@ ul {
     justify-content: flex-end;
     align-items: center;
 }
-
 
       /* COLUNAS DO GRAFICO 1 */
 
@@ -291,9 +273,7 @@ ul {
     margin-bottom: 10px;
 }
 
-
     /* COLUNAS DO GRAFICO 2 */
-
 
 #coluna1_grafico2 {
     width: 30px;
@@ -345,7 +325,6 @@ ul {
     margin-bottom: 10px;
 }
 
-
     /* COLUNAS DO GRAFICO 4 */
 
 #coluna1_grafico4 {
@@ -383,20 +362,21 @@ ul {
     flex-direction: row-reverse;
 }
 
-
 .menu-opcoes {
     opacity: 0;
     list-style: none;
     background-color: #03888D;
     border-radius: 8px;
     display: flex;
-    gap: 10px;
     padding: 10px;
     transition: all 0.3s ease-in;
     text-align: center;
     z-index: 1000;
     border: 2px black solid;
-    padding-top: 40px;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .icone:hover .menu-opcoes{
@@ -404,54 +384,192 @@ ul {
     opacity: 1;
 }
 
-.link {
+#ir_telaLogin {
     display: flex;
     position: relative;
-    margin-top: 12px;
-    text-align: center;
-    width: 170px;
-    height: 37px;
-    background-color: #1A3342;
-    border-radius: 12px;
-    border: 2px black solid;
 }
 
 #link1 {
     display: flex;
     position: relative;
-    padding-left: 10px;
-    padding-top: 5px;
 }
 
 #link2 {
     display: flex;
     position: relative;
-    height: 37px;
-    width: 85px;
-    padding-left: 20px;
-    padding-top: 5px;
 }
 
 #link3 {
     display: flex;
     position: relative;
-    width: 110px;
-    padding-left: 14px;
-    padding-top: 5px;
 }
 
 #link4 {
     display: flex;
     position: relative;
-    padding-left: 10px;
-    padding-top: 5px;
 }
 
-.link a {
-    color: white;
+.menu-opcoes a {
+    padding: 5px;
 }
 
-#links_comodos {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-wrap: wrap;
+    }
+    
+    body {
+        background-color: #33658A;
+        user-select: none;
+    }
+    
+    #cabecalho {
+        background-color: #1A3342;
+        min-height: 90px;
+        max-height: 90px;
+        display: flex;
+        padding: 10px 30px;
+        position: sticky;
+        top: 0;
+        width: 86vh;
+        z-index: 1000;
+    }
+    
+    h1 {
+        display: flex;
+        color: white;
+        font-size: 30px;
+        position: relative;
+    }
+    
+    #lampada {
+        position: relative;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        transition: transform 0.2s ease;
+        top: 10px;
+    }
+    
+    #lampada:hover {
+        transform: scale(1.05);
+    }
+    
+    .material-symbols-outlined.icone-menu {
+        display: flex;
+        position: relative;
+        font-size: 60px;
+        color: white;
+        top: 10px;
+    }
+    
+    main {
+        display: grid;
+        width: 86vh;
+    }
+
+    .icone {
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .menu-opcoes {
+        opacity: 0;
+        position: relative;
+        list-style: none;
+        background-color: #03888D;
+        border-radius: 8px;
+        display: flex;
+        gap: 5px;
+        padding: 10px;
+        transition: all 0.3s ease-in;
+        z-index: 1000;
+        border: 2px black solid;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .icone:hover .menu-opcoes{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .relatorio {
+        background-color: #119DA4;
+        border-collapse: separate;
+        border-spacing: 30px 15px;
+        border-radius: 10px;
+        font-size: 20px;
+        position: relative;
+    }
+    
+    caption {
+        margin-bottom: 30px;
+        width: 205px;
+        height: 75px;
+        padding: 12px;
+        background-color: #119DA4;
+        border-radius: 10px;
+        font-size: 21px;
+        position: relative;
+        left: 90px;
+    }
+    
+    #tabela {
+        background-color: #1A3342;
+        width: 470px;
+        height: 470px;
+        display: flex;
+        border-radius: 20px;
+        align-items: center;
+        position: relative;
+        margin: 70px auto;
+        justify-content: center;
+    }
+
+    footer {
+        width: 86vh;
+        height: 150px;
+        background-color: #1A3342;
+        display: flex;
+        position: relative;
+        margin-top: 100px;
+    }
+    
+    footer #logo {
+        display: flex;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        margin-top: 20px;
+        flex-direction: row-reverse;
+    }
+
+    .comodos {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    [id^='card_'] {
+        display: flex;
+        position: relative;
+        width: 250px;
+        height: 370px;
+        background-color: #03888D;
+        transition: transform 0.2s ease;
+        border-radius: 15px;
+        border: 2.5px black solid;
+    }
+
+    .comodos ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
 }
