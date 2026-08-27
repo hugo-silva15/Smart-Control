@@ -25,6 +25,27 @@ h1 {
     font-size: 40px;
 }
 
+#boas-vindas {
+    width: 400px;
+    height: 170px;
+    background-color: #119DA4;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin: 70px auto;
+    border: 2px black solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+#boas-vindas:hover {
+    transform: scale(1.05);
+}
+
 #lampada {
     border-radius: 50%;
     width: 90px;
