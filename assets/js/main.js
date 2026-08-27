@@ -13,7 +13,7 @@ setInterval(() => {
     let minutos = date.getMinutes();
     let horas = date.getHours();
     let dataAtual = `${dias_semana[date.getDay()]}, ${date.toLocaleDateString()} - ${horas}:${minutos} (-${fuso_horario}:00)`;
-    let bem_vindo = document.getElementById("welcome-message");
+    let bem_vindo = document.getElementById("welcomae-message");
     bem_vindo.textContent = `Olá ${nome} ${sobrenome}! Hoje é ${dataAtual}`;
 }, 1000);
 
