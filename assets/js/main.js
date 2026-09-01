@@ -16,3 +16,35 @@ setInterval(function()  {
     let bem_vindo = document.getElementById("boas-vindas");
     bem_vindo.textContent = `Olá ${nome} ${sobrenome}! Hoje é ${dataAtual}`;
 }, 1000);
+
+
+
+
+
+
+
+const campoBusca = document.querySelector("#campoBusca");
+const linhas = document.querySelectorAll("tbody tr");
+campoBusca.addEventListener("input", function () {
+    const textoDigitado = campoBusca.value.toLowerCase();
+    linhas.forEach(function (linha) {
+        const textoDaLinha = linha.textContent.toLowerCase();
+        if (textoDaLinha.includes(textoDigitado)) {
+            linha.style.display = "";
+        } else {
+            linha.style.display = "none";
+        }
+    });
+});
+
+
+
+
+
+
+
+
+const btnTema = document.querySelector("#btnTema");
+btnTema.addEventListener("click", function () {
+    document.body.classList.toggle("modo-escuro");
+});
