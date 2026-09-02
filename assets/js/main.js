@@ -21,8 +21,6 @@ setInterval(function()  {
 
 
 
-
-
 const campoBusca = document.querySelector("#campoBusca");
 const linhas = document.querySelectorAll("tbody tr");
 campoBusca.addEventListener("input", function () {
@@ -36,10 +34,6 @@ campoBusca.addEventListener("input", function () {
         }
     });
 });
-
-
-
-
 
 
 

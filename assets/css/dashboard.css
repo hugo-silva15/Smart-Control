@@ -189,6 +189,11 @@ footer {
     margin-top: 100px;
 }
 
+body.modo-escuro footer {
+    background-color: #405D99;
+}
+
+
 footer #logo {
     display: flex;
     position: relative;
