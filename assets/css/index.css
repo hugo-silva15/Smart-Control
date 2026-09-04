@@ -37,13 +37,6 @@ h1 {
     transform: scale(1.05);
 }
 
-.material-symbols-outlined.icone-menu {
-    display: flex;
-    position: relative;
-    font-size: 90px;
-    color: white;
-    top: 10px;
-}
 
 #boas-vindas {
     width: 400px;

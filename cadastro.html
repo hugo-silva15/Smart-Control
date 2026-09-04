@@ -5,37 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="assets/css/cadastro.css">
 </head>
 <body>
-    <img src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
-    <img src="assets/images/Capturar_2.PNG" alt="Menu">
-    <img src="assets/images/logo.png" alt="Logo da empresa">
-    <h1>Crie sua conta</h1>
+    <header id="cabecalho">
+        <img id="lampada" src="assets/images/Capturar.PNG" alt="Imagem de uma lâmpada">
+        <h1>Crie sua conta</h1>
+        <img src="assets/images/menu.png" alt="Menu"id="menu">
+    </header>
     <div id="boas-vindas" class="welcome"></div>
-    <form method="get" action="dashboard.html">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Digite seu nome..." required>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" placeholder="Digite seu e-mail..." required>
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="Digite sua senha..." required minlength="8">
-        <label for="acesso">Selecione um nível de acesso</label>
-        <select name="nivelAcesso" id="acesso" required>
-            <option value="" selected hidden>Selecione um nível de acesso</option>
-            <option value="admin">Administrador</option>
-            <option value="moderador">Moderador</option>
-            <option value="membro">Membro</option>
-        </select>
-        <details>
-            <summary>Termos de uso</summary>
-            <p>Eu autorizo</p>
-            <label for="termos">Eu aceito os termos de uso</label>
-            <input type="checkbox" id="termos" required>
-        </details>
-        <button type="submit">Cadastrar</button>
+    <div id="form">
+        <form method="get" action="dashboard.html" id="formulario">
+            <label class="label_form" for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome..." required>
+            <label class="label_form" for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail..." required>
+            <label class="label_form" for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha..." required minlength="8">
+            <label class="label_form" for="acesso">Selecione um nível de acesso</label>
+            <select name="nivelAcesso" id="acesso" required>
+                <option value="" selected hidden>Selecione um nível de acesso</option>
+                <option value="admin">Administrador</option>
+                <option value="moderador">Moderador</option>
+                <option value="membro">Membro</option>
+            </select>
+            <details>
+                <summary>Termos de uso</summary>
+                <p>Todo seu dinheiro é nosso.</p>
+                <label for="termos">Eu autorizo.</label>
+                <input id="input_details" type="checkbox" id="termos" required>
+            </details>
+            <button type="submit">Cadastrar</button>
+        </form>
         <a href="index.html"><h2>Já tenho conta</h2></a>
-    </form>
-    <footer>
+    </div>
+    <div id="localizacao">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1101.7157827136773!2d-43.35147827426762!3d-21.752556091090245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c976673a705%3A0xb0aa4dd64090a7f5!2sSENAI%20Juiz%20de%20Fora%20CFP%20Jos%C3%A9%20Fagundes%20Netto!5e0!3m2!1spt-BR!2sbr!4v1785949201675!5m2!1spt-BR!2sbr"
         width="600"
         height="450"
@@ -44,7 +48,11 @@
         loading="lazy"
         referrerpolicy="strict-origin-when-cross-origin">
         </iframe>
+    </div>
+    <footer>
+        <p>&copy; 2023 Sua Smart-Control. Todos os direitos reservados.</p>
+        <img src="assets/images/logo.png" alt="Logo da empresa" id="logo-footer">
     </footer>
-    <script src="assets/js/main.js" defer></script>
+    <!-- <script src="assets/js/main.js" defer></script> -->
 </body>
 </html>
