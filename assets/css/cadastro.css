@@ -73,6 +73,7 @@ iframe {
     width: 500px;
     height: 500px;
     border: none;
+    border-radius: 30px;
 }
 
 #localizacao {
@@ -90,15 +91,31 @@ iframe {
     transition: transform 0.2s ease; 
 }
 
+footer #logo-footer {
+    display: flex;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    flex-direction: row-reverse;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    top: 20px;
+    margin: auto;
+}
+
+
 
 footer {
-    background-color: #1A3342;
-    min-height: 130px;
-    max-height: 130px;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
-    align-content: space-around;
+    height: 150px;
+    background-color: #1A3342;
+    display: flex;
+    position: relative;
+    margin-top: 100px;
 }
 
 
@@ -205,4 +222,59 @@ a {
 
 a:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    #form {
+        width: 90%;
+        min-height: 500px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    input {
+        width: 90%;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 80px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    footer #logo-footer {
+        width: 80px;
+        height: 80px;
+        margin: 10px auto;
+    }
+
+    #lampada {
+        width: 60px;
+        height: 60px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    #menu {
+        width: 70px;
+        height: 70px;
+    }
 }

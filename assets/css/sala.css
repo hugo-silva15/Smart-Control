@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #33658A;
+    user-select: none;
+}
+
+body.modo-escuro {
+    background-color: #08074D;
+    color: white;
+}
+
+
+body.modo-escuro #cabecalho {
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #405D99;
+}
+
+header {
+    background-color: #1A3342;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    color: white;
+    position: fixed;
+    z-index: 100000000000;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+}
+
+
+#esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#btnTema {
+    background-color: #33658A;
+    width: 90px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-opcoes_ {
+    display: none;
+    min-width: 170px;
+    padding: 8px 0;
+    background-color: #03888D;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+    border: 2px black solid;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#botao_menu {
+    background-color: #03888D;
+    color: black;
+    width: 130px;
+    height: 80px;
+    border-radius: 30px;
+    font-size: 30px;
+}
+
+
+
+.menu-opcoes_.show {
+    display: block;
+}
+
+.menu-opcoes_ button {
+    cursor: pointer;
+}
+
+
+#ir_telaLogin {
+    margin: 10px;
+}
+
+
+.link {
+    margin: 10px;
+}
+
+#logo {
+    transition: transform 0.2s ease;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 20px;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+}
+
+#direita {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+#boas-vindas {
+    width: 400px;
+    height: 170px;
+    background-color: #119DA4;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin: 170px auto;
+    border: 2px black solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+#boas-vindas:hover {
+    transform: scale(1.05);
+}
+
+main {
+    display: grid;
+}
+
+
+.aparelho {
+    width: 300px;
+    height: 100px;
+    background-color: #626260;
+    border-radius: 10px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    margin: 20px auto;
+    border: 2px black solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    opacity: 0.9;
+}
+
+#linha {
+    width: 10px;
+    height: 100%;
+    background-color: #119DA4;
+}
+
+#lado1 {
+    display: flex;
+    flex-direction: column;
+}
+
+#lado2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#lados {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    gap: 20px;
+}
+
+#lado_esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 700px;
+}
+
+#lado_esquerdo p {
+    font-size: 30px;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.fundo_grafico {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 370px;
+    background-color: #D9D9D9;
+    transition: transform 0.2s ease;
+    border-radius: 15px;
+    border: 2.5px black solid;
+    margin: 10px;
+}
+
+.grupo_usuario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#graficos {
+    display: flex;
+    flex-direction: row;
+}
+
+.quadrado {
+    width: 20px;
+    height: 20px;
+}
+
+#quadrado1 {
+    background-color: #3BFF00;
+}
+
+#quadrado2 {
+    background-color: #E5CD19;
+}
+
+#quadrado3 {
+    background-color: #149FB8;
+}
