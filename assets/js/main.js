@@ -19,6 +19,10 @@ setInterval(function()  {
 
 
 
+const btnTema = document.querySelector("#btnTema");
+btnTema.addEventListener("click", function () {
+    document.body.classList.toggle("modo-escuro");
+});
 
 
 const campoBusca = document.querySelector("#campoBusca");
@@ -37,8 +41,3 @@ campoBusca.addEventListener("input", function () {
 
 
 
-
-const btnTema = document.querySelector("#btnTema");
-btnTema.addEventListener("click", function () {
-    document.body.classList.toggle("modo-escuro");
-});

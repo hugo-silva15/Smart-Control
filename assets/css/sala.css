@@ -18,7 +18,7 @@ body.modo-escuro {
 }
 
 
-body.modo-escuro #cabecalho {
+body.modo-escuro header {
     transition: background-color 0.3s, color 0.3s;
     background-color: #405D99;
 }
@@ -173,6 +173,7 @@ main {
     width: 10px;
     height: 100%;
     background-color: #119DA4;
+    margin-left: 60px;
 }
 
 #lado1 {
@@ -202,7 +203,6 @@ main {
 #lado_esquerdo p {
     font-size: 30px;
     color: white;
-
     display: flex;
     justify-content: space-around;
 }
@@ -211,6 +211,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: space-around;
 }
 
 .fundo_grafico {
@@ -223,13 +224,18 @@ main {
     border-radius: 15px;
     border: 2.5px black solid;
     margin: 10px;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .grupo_usuario {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    gap: 5px;
 }
 
 #graficos {
@@ -238,8 +244,8 @@ main {
 }
 
 .quadrado {
-    width: 20px;
-    height: 20px;
+    width: 13px;
+    height: 13px;
 }
 
 #quadrado1 {
@@ -252,4 +258,91 @@ main {
 
 #quadrado3 {
     background-color: #149FB8;
+}
+
+#usuarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+#grafico_pizza {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#149FB8 0% 25%, 
+    #E5CD19 20% 80%,
+    #3BFF00 70% 100%);
+    border: black solid 1px;
+}
+
+.fundo_grafico #titulo {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.coluna {
+    width: 30px;
+    height: 100px;
+    background-color: #E5CD19;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+    border: 1.5px black solid;
+}
+
+.grupo_usuario2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+#usuarios2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    gap: 15px;
+}
+
+#coluna1_grafico2 {
+    height: 230px;
+}
+
+#coluna2_grafico2 {
+    height: 120px;
+}
+
+#coluna3_grafico2 {
+    height: 170px;
+}
+
+
+
+#coluna1_grafico3 {
+    height: 170px;
+}
+
+#coluna2_grafico3 {
+    height: 200px;
+}
+
+#lado_direito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#lado_direito #titulo_direito {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
 }
