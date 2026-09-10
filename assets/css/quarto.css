@@ -23,6 +23,16 @@ body.modo-escuro header {
     background-color: #405D99;
 }
 
+
+body.modo-escuro .fundo_grafico #titulo, p {
+    color: black;
+}
+
+body.modo-escuro h1 {
+    color: black;
+}
+
+
 header {
     background-color: #1A3342;
     height: 130px;
@@ -347,4 +357,91 @@ main {
     color: white;
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width: 400px) {
+    
+    #logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+
+    #esquerda {
+        width: 160px;
+    }
+
+    #direita {
+        width: 190px;
+    }
+
+    #botao_menu {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+
+    #boas-vindas {
+        width: 350px;
+        font-size: 16px;
+        margin: 135px auto;
+        margin-bottom: 50px;
+    }
+
+    #bagulho {
+        width: 330px;
+        height: 450px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    header {
+        max-width: 100%;
+        height: 85px;
+        padding: 0px 10px;
+    }
+
+    #lado_esquerdo {
+        width: 200px;
+    }
+
+    .aparelho {
+        width: 200px;
+        font-size: 15px;
+    }
+
+    #lado_esquerdo p {
+        font-size: 18px;
+    }
+
+    #lados {
+        padding: 0px;
+        gap: 10px;
+    }
+
+    #conteudo {
+        gap: 55px;
+    }
+
+    #linha {
+        width: 80%;
+        height: 5px;
+        margin-left: 0px;
+    }
+
+    #lado_direito #titulo_direito {
+        font-size: 20px;
+    }
+
+    #graficos {
+        flex-direction: column;
+    }
 }

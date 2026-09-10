@@ -25,6 +25,100 @@ btnTema.addEventListener("click", function () {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const checkboxAdicionar = document.getElementById('adicionar');
+const checkboxRemover = document.getElementById('remover');
+
+const fecharModalAdicionar = () => {
+    checkboxAdicionar.checked = false;
+};
+
+const fecharModalRemover = () => {
+    checkboxRemover.checked = false;
+};
+
+function validarCampos(modalTipo) {
+    const inputs = document.querySelectorAll(modalTipo === 'adicionar' ? '.input-adicionar' : '.input-remover');
+
+    return Array.from(inputs).every((input) => {
+        const valor = input.value.trim();
+        return valor !== '';
+    });
+}
+
+document.getElementById('btnCadastrarDispositivo')?.addEventListener('click', () => {
+    if (!validarCampos('adicionar')) {
+        alert('Preencha nome e cômodo do dispositivo antes de cadastrar.');
+        return;
+    }
+
+    fecharModalAdicionar();
+});
+
+document.getElementById('btnRemoverDispositivo')?.addEventListener('click', () => {
+    if (!validarCampos('remover')) {
+        alert('Preencha nome e cômodo do dispositivo antes de remover.');
+        return;
+    }
+
+    fecharModalRemover();
+});
+
+document.querySelectorAll('.fechar').forEach((botaoFechar) => {
+    botaoFechar.addEventListener('click', () => {
+        const alvo = botaoFechar.dataset.fechar;
+
+        if (alvo === 'adicionar') {
+            fecharModalAdicionar();
+        }
+
+        if (alvo === 'remover') {
+            fecharModalRemover();
+        }
+    });
+});
+
+document.querySelectorAll('.modal').forEach((modal) => {
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            const aberto = modal.classList.contains('modal-adicionar');
+            if (aberto) {
+                fecharModalAdicionar();
+            } else {
+                fecharModalRemover();
+            }
+        }
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const campoBusca = document.querySelector("#campoBusca");
 const linhas = document.querySelectorAll("tbody tr");
 campoBusca.addEventListener("input", function () {
@@ -38,6 +132,5 @@ campoBusca.addEventListener("input", function () {
         }
     });
 });
-
 
 

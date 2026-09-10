@@ -34,42 +34,45 @@
 
 
 
-
-
-
-
-
         <div id="bagulho">
-            <h1>Deseja adicionar ou remover dispositivo?</h1>
-            <!-- Botão que abre -->
-<input type="checkbox" id="abrirModal">
-
-<label for="abrirModal" class="botao-dispositivo">
-    Gerenciar dispositivos
-</label>
-
-
-<!-- Modal -->
-<div class="modal">
-
-    <div class="caixa-modal">
-
-        <label for="abrirModal" class="fechar">×</label>
-
-        <h2>Gerenciar Dispositivos</h2>
-
-        <p>Deseja adicionar ou remover dispositivo?</p>
-
-        <div class="botoes">
-            <button class="cadastrar">Cadastrar dispositivo</button>
-            <button class="remover">Remover dispositivo</button>
-        </div>
-
-    </div>
-
-</div>
-
-
+            
+            <input type="checkbox" id="adicionar">
+            <input type="checkbox" id="remover">
+            <div class="gerenciar">
+                <h2>Deseja adicionar ou remover dispositivo?</h2>
+                <label for="adicionar" class="btn-adicionar">
+                    Adicionar dispositivo
+                </label>
+                <label for="remover" class="btn-remover">
+                    Remover dispositivo
+                </label>
+            </div>
+            
+            <div class="modal modal-adicionar">
+                <div class="caixa-modal" id="modal_adicionar">
+                    <button type="button" class="fechar" data-fechar="adicionar" aria-label="Fechar modal de adicionar">×</button>
+                    <h2>Nome do Dispositivo</h2>
+                    <input type="text" placeholder="Enter..." class="input-adicionar">
+                    <h2>Cômodo do dispositivo</h2>
+                    <input type="text" placeholder="Enter..." class="input-adicionar">
+                    <button type="button" class="btn-adicionar" id="btnCadastrarDispositivo">
+                        Cadastrar dispositivo
+                    </button>
+                </div>
+            </div>
+            
+            <div class="modal modal-remover">
+                <div class="caixa-modal" id="modal_remover">
+                    <button type="button" class="fechar" data-fechar="remover" aria-label="Fechar modal de remover">×</button>
+                    <h2>Nome do Dispositivo</h2>
+                    <input type="text" placeholder="Enter..." class="input-remover">
+                    <h2>Cômodo do dispositivo</h2>
+                    <input type="text" placeholder="Enter..." class="input-remover">
+                    <button type="button" class="btn-remover" id="btnRemoverDispositivo">
+                        Remover dispositivo
+                    </button>
+                </div>
+            </div>
         </div>
 
 
@@ -79,7 +82,7 @@
 
 
     </main>
-    <!-- <script src="assets/js/main.js" defer></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
