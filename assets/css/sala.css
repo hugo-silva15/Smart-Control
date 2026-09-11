@@ -342,6 +342,7 @@ main {
     align-items: center;
     width: calc(50% - 5px);
     padding: 0 10px;
+    align-content: center;
 }
 
 #lado_direito #titulo_direito {
@@ -389,7 +390,7 @@ main {
 
 
     #boas-vindas {
-        width: 350px;
+        width: 300px;
         font-size: 16px;
         margin: 135px auto;
         margin-bottom: 50px;
@@ -416,8 +417,8 @@ main {
     }
 
     .aparelho {
-        width: 200px;
-        font-size: 15px;
+        width: 95px;
+        font-size: 10px;
     }
 
     #lado_esquerdo p {

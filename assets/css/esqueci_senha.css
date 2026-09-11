@@ -149,7 +149,7 @@ a:hover {
 
 
 #logo {
-    position: fixed;
+    position: relative;
     left: 20px;
     bottom: 20px;
     width: 150px;
@@ -166,4 +166,54 @@ a:hover {
 #formulario label {
     width: 300px;
     text-align: left;
+}
+
+
+
+@media (max-width: 400px) {
+    #lampada {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #menu {
+        width: 70px;
+        height: 70px;
+    }
+
+    #cabecalho {
+        height: 110px;
+    }
+
+    #boas-vindas {
+        width: 300px;
+        font-size: 16px;
+    }
+
+    #form {
+        width: 300px;
+        height: 420px;
+    }
+
+
+    input {
+        width: 250px;
+        height: 35px;
+    }
+
+    label {
+        font-size: 20px;
+        margin-left: 45px;
+    }
+
+
+    ::placeholder {
+        font-size: 16px;
+}
+
 }

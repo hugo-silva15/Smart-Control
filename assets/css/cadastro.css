@@ -224,6 +224,28 @@ a:hover {
     transform: scale(1.05);
 }
 
+
+#boas-vindas {
+    width: 400px;
+    height: 170px;
+    background-color: #119DA4;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin: 50px auto;
+    border: 2px black solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+#boas-vindas:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 600px) {
     #form {
         width: 90%;
@@ -276,5 +298,11 @@ a:hover {
     #menu {
         width: 70px;
         height: 70px;
+    }
+
+    #boas-vindas {
+        width: 350px;
+        font-size: 16px;
+        margin-bottom: 50px;
     }
 }

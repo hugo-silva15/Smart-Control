@@ -40,8 +40,7 @@ body.modo-escuro td, th {
 
 #cabecalho {
     background-color: #1A3342;
-    min-height: 130px;
-    max-height: 130px;
+    height: 130px;
     display: flex;
     justify-content: space-between;
     padding: 10px 30px;
@@ -186,7 +185,7 @@ footer {
     background-color: #1A3342;
     display: flex;
     position: relative;
-    margin-top: 100px;
+    justify-content: space-between;
 }
 
 body.modo-escuro footer {
@@ -229,7 +228,6 @@ footer #logo {
     border-spacing: 30px 15px;
     border-radius: 10px;
     font-size: 22px;
-    position: relative;
 }
 
 caption {
@@ -258,14 +256,13 @@ caption {
 
 .comodos {
     display: flex;
-    position: relative;
     justify-content: space-around;
-    padding: 80px;
 }
 
 ul {
     display: flex;
     list-style: none;
+    justify-content: center;
 }
 
 [id^='fundo_grafico'] {
@@ -456,137 +453,69 @@ ul {
 }
 
 @media (max-width: 400px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-        flex-wrap: wrap;
-    }
-    
-    body {
-        background-color: #33658A;
-        user-select: none;
-    }
-    
-    #cabecalho {
-        background-color: #1A3342;
-        min-height: 90px;
-        max-height: 90px;
-        display: flex;
-        padding: 10px 30px;
-        position: sticky;
-        top: 0;
-        width: 86vh;
-        z-index: 1000;
-    }
-    
-    h1 {
-        display: flex;
-        color: white;
-        font-size: 30px;
-        position: relative;
-    }
-    
-    #lampada {
-        position: relative;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        transition: transform 0.2s ease;
-        top: 10px;
-    }
-    
-    #lampada:hover {
-        transform: scale(1.05);
-    }
 
-    
-    main {
-        display: grid;
-        width: 86vh;
-    }
-    
-    .relatorio {
-        background-color: #119DA4;
-        border-collapse: separate;
-        border-spacing: 30px 15px;
-        border-radius: 10px;
-        font-size: 20px;
-        position: relative;
-    }
-    
+
     caption {
-        margin-bottom: 30px;
-        width: 205px;
-        height: 75px;
-        padding: 12px;
-        background-color: #119DA4;
-        border-radius: 10px;
-        font-size: 21px;
-        position: relative;
-        left: 90px;
+        width: 200px;
+        font-size: 18px;
+        height: 70px;
+        left: 50px;
     }
-    
+
+
+    .relatorio {
+        font-size: 12px;
+    }
+
+
     #tabela {
-        background-color: #1A3342;
-        width: 470px;
-        height: 470px;
-        display: flex;
-        border-radius: 20px;
-        align-items: center;
-        position: relative;
-        margin: 70px auto;
-        justify-content: center;
+        width: 330px;
+        height: 425px;
     }
 
-    footer {
-        width: 86vh;
-        height: 150px;
-        background-color: #1A3342;
-        display: flex;
-        position: relative;
-        margin-top: 100px;
-    }
-    
-    footer #logo {
-        display: flex;
-        position: relative;
-        width: 120px;
-        height: 120px;
-        margin-top: 20px;
-        flex-direction: row-reverse;
+
+
+    #lampada {
+        width: 70px;
+        height: 70px;
     }
 
-    .comodos {
-        display: flex;
-        position: relative;
-        justify-content: space-around;
-    }
 
-    [id^='card_'] {
-        display: flex;
-        position: relative;
-        width: 250px;
-        height: 370px;
-        background-color: #03888D;
-        transition: transform 0.2s ease;
-        border-radius: 15px;
-        border: 2.5px black solid;
-    }
-
-    .comodos ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
+    h1 {
+        font-size: 20px;
+        top: 40px;
     }
 
     #botao_menu {
-        background-color: #03888D;
-        color: black;
-        width: 80px;
-        height: 50px;
-        border-radius: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
         font-size: 20px;
     }
+
+    #cabecalho {
+        height: 110px;
+    }
+
+    #boas-vindas {
+        width: 300px;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+
+    footer {
+        height: 140px;
+    }
+
+    footer #logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ir_classroom {
+        margin-top: 45px;
+    }
+
+
 }

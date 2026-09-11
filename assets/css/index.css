@@ -79,6 +79,7 @@ h1 {
     flex-direction: column;
     border-radius: 17px;
     margin: 80px auto;
+    align-content: center;
 }
 
 
@@ -138,7 +139,7 @@ a:hover {
 
 
 #logo {
-    position: fixed;
+    position: relative;
     left: 20px;
     bottom: 20px;
     width: 150px;
@@ -171,8 +172,16 @@ a:hover {
         user-select: none;
     }
     
+
+    #boas-vindas {
+        width: 300px;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+
     #cabecalho {
-        width: 1005;
+        width: 100%;
         background-color: #1A3342;
         min-height: 110px;
         max-height: 110px;
@@ -180,6 +189,7 @@ a:hover {
         align-items: center;
         justify-content: space-between;
         padding: 10px 30px;
+        height: 30px;
     }
     
     h1 {
@@ -206,4 +216,22 @@ a:hover {
         color: white;
         top: 10px;
     }
+
+
+    #form {
+        width: 300px;
+        height: 420px;
+    }
+
+    input {
+        width: 250px;
+        height: 35px;
+    }
+
+    label {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+
 }
